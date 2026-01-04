@@ -738,7 +738,53 @@
                 <li>Merino wool</li
             </ul>
         </div>
-         <div class="section">
-                <h2>💡 My PDF Document</h2>
-<iframe src="PERSONAL STYLE IDENTITY.pdf" width="100%" height="600px">
-</iframe>
+
+<style>
+    /* Default: Show the PDF embed, hide the mobile button */
+    .pdf-embed {
+        display: block;
+        width: 100%;
+        height: 600px;
+        border: 1px solid #ccc;
+    }
+    .mobile-pdf-btn {
+        display: none; /* Hidden on desktop */
+    }
+
+    /* Mobile Rule: When screen is smaller than 768px (phones/tablets) */
+    @media (max-width: 768px) {
+        .pdf-embed {
+            display: none; /* Hide the heavy embed on mobile */
+        }
+        .mobile-pdf-btn {
+            display: block; /* Show the button on mobile */
+            text-align: center;
+            margin: 20px 0;
+        }
+        .mobile-btn-style {
+            background-color: #0366d6; /* GitHub Blue */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-family: sans-serif;
+            display: inline-block;
+        }
+    }
+</style>
+
+  <div class="section">
+   <h2>💡 My PDF Document</h2>
+<object class="pdf-embed" data="document.pdf" type="application/pdf">
+    <p>Your browser does not support PDFs. <a href="PERSONAL STYLE IDENTITY.pdf">Download the PDF</a>.</p>
+</object>
+
+<div class="mobile-pdf-btn">
+    <p>PDFs cannot be embedded on small screens.</p>
+    <a href=PERSONAL STYLE IDENTITY.pdf" class="mobile-btn-style" target="_blank">
+        Tap here to view the PDF
+    </a>
+</div>
+        
+       
