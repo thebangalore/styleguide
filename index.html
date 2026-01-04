@@ -740,11 +740,23 @@
         </div>
 
   <h2>💡 My PDF Document</h2>
-<iframe 
-    src="https://docs.google.com/gview?url=https://github.com/thebangalore/styleguide/blob/478453f847bd22290c85cbaaeae80ad7b4b78e07/PERSONAL%20STYLE%20IDENTITY.pdf&embedded=true" 
-    width="100%" 
-    height="600px" 
-    frameborder="0">
-</iframe>
+<style>
+    .pdf-page {
+        width: 100%;
+        max-width: 800px; /* Prevents it from getting too huge on desktop */
+        height: auto;
+        display: block;
+        margin: 0 auto 20px auto; /* Centers the image and adds space below */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a nice shadow */
+        border: 1px solid #ddd;
+    }
+</style>
+
+
+<img src="page1.jpg" class="pdf-page" alt="Page 1">
+<img src="page2.jpg" class="pdf-page" alt="Page 2">
+        <img src="page3.jpg" class="pdf-page" alt="Page 2">
+        <img src="page4.jpg" class="pdf-page" alt="Page 2">
+        <img src="page5.jpg" class="pdf-page" alt="Page 2">
  
 
