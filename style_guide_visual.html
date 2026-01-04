@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Style Identity - Visual Wardrobe Playbook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #2c2416 0%, #1a1510 100%);
+            color: #e8dcc4;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #1f1b15;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        
+        header {
+            background: linear-gradient(135deg, #3d2f1f 0%, #2a1f15 100%);
+            padding: 60px 40px;
+            text-align: center;
+            border-bottom: 3px solid #8b6f47;
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: #d4a574;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #a89175;
+            font-style: italic;
+        }
+        
+        .section {
+            padding: 40px;
+            border-bottom: 1px solid #3d2f1f;
+        }
+        
+        h2 {
+            font-size: 2em;
+            color: #d4a574;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #8b6f47;
+        }
+        
+        h3 {
+            font-size: 1.4em;
+            color: #b89968;
+            margin: 25px 0 15px 0;
+        }
+        
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .profile-card {
+            background: #2a2318;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #8b6f47;
+        }
+        
+        .profile-card h4 {
+            color: #d4a574;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .golden-rule {
+            background: linear-gradient(135deg, #8b6f47 0%, #6b5437 100%);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(139,111,71,0.3);
+        }
+        
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .color-swatch {
+            text-align: center;
+        }
+        
+        .color-box {
+            height: 100px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            border: 2px solid #3d2f1f;
+        }
+        
+        .color-name {
+            font-size: 0.9em;
+            color: #b89968;
+        }
+        
+        .checklist {
+            background: #2a2318;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .checklist li {
+            margin: 12px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #8b6f47;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .outfit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+        
+        .outfit-card {
+            background: #2a2318;
+            padding: 25px;
+            border-radius: 8px;
+            border-top: 3px solid #8b6f47;
+        }
+        
+        .outfit-card h4 {
+            color: #d4a574;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .outfit-items {
+            list-style: none;
+        }
+        
+        .outfit-items li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+            color: #c4b5a0;
+        }
+        
+        .outfit-items li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #8b6f47;
+        }
+        
+        .fit-guide {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .fit-box {
+            background: #2a2318;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #3d2f1f;
+        }
+        
+        .fit-icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .fit-label {
+            color: #d4a574;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .avoid-box {
+            background: #3d1f1f;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #8b4747;
+            margin: 15px 0;
+        }
+        
+        .avoid-box h4 {
+            color: #d47474;
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            margin-left: 20px;
+            color: #c4b5a0;
+        }
+        
+        ul li {
+            margin: 8px 0;
+        }
+        
+        .body-silhouette {
+            text-align: center;
+            margin: 30px 0;
+            padding: 30px;
+            background: #2a2318;
+            border-radius: 8px;
+        }
+        
+        .silhouette-svg {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .color-palette {
+                grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Personal Style Identity</h1>
+            <p class="subtitle">Your Complete Wardrobe Playbook</p>
+        </header>
+
+        <!-- Section 1: Identity & Architecture -->
+        <div class="section">
+            <h2>1. Identity & Architecture</h2>
+            
+            <div class="profile-grid">
+                <div class="profile-card">
+                    <h4>📏 Physical Profile</h4>
+                    <p><strong>Height:</strong> 162 cm</p>
+                    <p><strong>Build:</strong> Lean Rectangle</p>
+                </div>
+                
+                <div class="profile-card">
+                    <h4>✨ Style Archetype</h4>
+                    <p><strong>Kibbe Soft Classic</strong></p>
+                    <p>Balanced, symmetrical, slightly soft edges</p>
+                </div>
+                
+                <div class="profile-card">
+                    <h4>🎨 Color Season</h4>
+                    <p><strong>Deep Autumn</strong></p>
+                    <p>Warm, dark, muted tones</p>
+                </div>
+                
+                <div class="profile-card">
+                    <h4>🎯 Visual Goal</h4>
+                    <p>Clean. Structured. Warm. Fitted.</p>
+                </div>
+            </div>
+            
+            <div class="golden-rule">
+                ⭐ THE GOLDEN RULE: Fit beats brand. Dark, warm, solid colors elevate instantly.
+            </div>
+            
+            <div class="body-silhouette">
+                <h3>Soft Classic Body Type</h3>
+                <svg class="silhouette-svg" viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Head -->
+                    <circle cx="100" cy="40" r="25" fill="#8b6f47" opacity="0.3"/>
+                    <!-- Shoulders (balanced) -->
+                    <rect x="70" y="65" width="60" height="10" rx="5" fill="#8b6f47" opacity="0.5"/>
+                    <!-- Torso (rectangle with slight softness) -->
+                    <rect x="75" y="75" width="50" height="120" rx="8" fill="#8b6f47" opacity="0.5"/>
+                    <!-- Hips (balanced with shoulders) -->
+                    <rect x="70" y="195" width="60" height="15" rx="5" fill="#8b6f47" opacity="0.5"/>
+                    <!-- Legs -->
+                    <rect x="80" y="210" width="18" height="140" rx="4" fill="#8b6f47" opacity="0.5"/>
+                    <rect x="102" y="210" width="18" height="140" rx="4" fill="#8b6f47" opacity="0.5"/>
+                </svg>
+                <p style="color: #b89968; margin-top: 15px;">Balanced proportions • Moderate angles • Slight softness</p>
+            </div>
+        </div>
+
+        <!-- Section 2: Deep Autumn Color Palette -->
+        <div class="section">
+            <h2>🎨 Your Deep Autumn Color Palette</h2>
+            
+            <h3>Neutrals (Base Colors)</h3>
+            <div class="color-palette">
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #3a3a3a;"></div>
+                    <div class="color-name">Charcoal</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #1e2640;"></div>
+                    <div class="color-name">Deep Navy</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #3d2817;"></div>
+                    <div class="color-name">Dark Brown</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #4a4f36;"></div>
+                    <div class="color-name">Olive</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #0f0f0f;"></div>
+                    <div class="color-name">Black</div>
+                </div>
+            </div>
+            
+            <h3>Accent Colors</h3>
+            <div class="color-palette">
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #f5f5dc;"></div>
+                    <div class="color-name">Cream/Ivory</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #2d5016;"></div>
+                    <div class="color-name">Forest Green</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #722f37;"></div>
+                    <div class="color-name">Burgundy</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #b7410e;"></div>
+                    <div class="color-name">Rust</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #e1ad01;"></div>
+                    <div class="color-name">Mustard</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #1f4d4d;"></div>
+                    <div class="color-name">Deep Teal</div>
+                </div>
+            </div>
+            
+            <h3>Leather & Metal Tones</h3>
+            <div class="color-palette">
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #6f4e37;"></div>
+                    <div class="color-name">Brown Leather</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #a0522d;"></div>
+                    <div class="color-name">Cognac</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #673147;"></div>
+                    <div class="color-name">Oxblood</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background: linear-gradient(135deg, #b8860b 0%, #8b6914 100%);"></div>
+                    <div class="color-name">Antique Gold</div>
+                </div>
+            </div>
+            
+            <div class="avoid-box">
+                <h4>❌ Strictly Avoid These Colors</h4>
+                <ul>
+                    <li>Cool greys</li>
+                    <li>Icy blues</li>
+                    <li>Pastels (baby blue, mint, lavender)</li>
+                    <li>Neon colors</li>
+                    <li>Bright white (use cream/ivory instead)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 3: Pre-Shop Filter -->
+        <div class="section">
+            <h2>2. The Pre-Shop Filter</h2>
+            <p style="margin-bottom: 20px;">Before buying anything, apply this non-negotiable checklist:</p>
+            
+            <div class="checklist">
+                <ul style="list-style: none;">
+                    <li><strong>The Fit Test:</strong> Is it Slim or Tailored? (Reject all Regular, Relaxed, or Oversized)</li>
+                    <li><strong>The Shoulder Test:</strong> Do the shoulder seams sit perfectly at the edge of the shoulder?</li>
+                    <li><strong>The Palette Test:</strong> Does it belong to the Deep Autumn palette? (If unsure, skip)</li>
+                    <li><strong>Alteration Mindset:</strong> Buy for shoulders and length; the waist can be taken in later</li>
+                    <li><strong>Vertical Line:</strong> Does it create an unbroken vertical line? (Monochrome = elongating)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 4: Tops -->
+        <div class="section">
+            <h2>3. Tops</h2>
+            
+            <h3>Button-Down Shirts</h3>
+            <div class="fit-guide">
+                <div class="fit-box">
+                    <div class="fit-icon">👔</div>
+                    <div class="fit-label">Fit</div>
+                    <p>Slim or Tailored with light taper</p>
+                </div>
+                <div class="fit-box">
+                    <div class="fit-icon">📏</div>
+                    <div class="fit-label">Length</div>
+                    <p>Mid-fly when untucked (never cover butt)</p>
+                </div>
+                <div class="fit-box">
+                    <div class="fit-icon">👨‍💼</div>
+                    <div class="fit-label">Collars</div>
+                    <p>Point, Semi-spread, Button-down</p>
+                </div>
+                <div class="fit-box">
+                    <div class="fit-icon">💪</div>
+                    <div class="fit-label">Sleeves</div>
+                    <p>Full sleeves, roll below elbow</p>
+                </div>
+            </div>
+            
+            <h4>Best Colors:</h4>
+            <div class="color-palette">
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #f5f5dc;"></div>
+                    <div class="color-name">Cream</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #4a4f36;"></div>
+                    <div class="color-name">Olive</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #2d5016;"></div>
+                    <div class="color-name">Forest Green</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #722f37;"></div>
+                    <div class="color-name">Burgundy</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #1f4d4d;"></div>
+                    <div class="color-name">Deep Teal</div>
+                </div>
+            </div>
+            
+            <h3>T-Shirts</h3>
+            <ul>
+                <li><strong>Fit:</strong> Slim with structured fabric (avoid thin cotton)</li>
+                <li><strong>Neckline:</strong> Crew neck or Polo. Shallow V acceptable</li>
+                <li><strong>Sleeves:</strong> Mid-bicep to just above elbow</li>
+                <li><strong>Length:</strong> 2–3 inches below belt line</li>
+            </ul>
+            
+            <div class="avoid-box">
+                <h4>❌ Avoid</h4>
+                <ul>
+                    <li>Deep V or scoop necks</li>
+                    <li>Logos and graphics</li>
+                    <li>Oversized fits</li>
+                    <li>Big checks, horizontal stripes</li>
+                    <li>Light blue, bright white</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 5: Bottoms -->
+        <div class="section">
+            <h2>4. Bottoms</h2>
+            
+            <h3>Jeans</h3>
+            <div class="fit-guide">
+                <div class="fit-box">
+                    <div class="fit-icon">👖</div>
+                    <div class="fit-label">Fit</div>
+                    <p>Slim Straight or Slim Tapered</p>
+                </div>
+                <div class="fit-box">
+                    <div class="fit-icon">⬆️</div>
+                    <div class="fit-label">Rise</div>
+                    <p>Mid to slightly high rise</p>
+                </div>
+                <div class="fit-box">
+                    <div class="fit-icon">👞</div>
+                    <div class="fit-label">Length</div>
+                    <p>Quarter break max (no stacking)</p>
+                </div>
+                <div class="fit-box">
+                    <div class="fit-icon">🌑</div>
+                    <div class="fit-label">Wash</div>
+                    <p>Dark Indigo, Black, Charcoal</p>
+                </div>
+            </div>
+            
+            <h3>Trousers & Chinos</h3>
+            <ul>
+                <li><strong>Fit:</strong> Flat front, Slim Straight, Mid-rise</li>
+                <li><strong>Length:</strong> No break or very small break. Clean hem mandatory</li>
+                <li><strong>Colors:</strong> Olive, Charcoal, Dark Khaki, Navy, Chocolate Brown, Black</li>
+            </ul>
+            
+            <div class="avoid-box">
+                <h4>❌ Avoid</h4>
+                <ul>
+                    <li>Light blue wash jeans</li>
+                    <li>Rips/distressing</li>
+                    <li>Skinny fits</li>
+                    <li>Pleats</li>
+                    <li>Baggy thighs</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 6: Outerwear -->
+        <div class="section">
+            <h2>5. Layering & Outerwear</h2>
+            
+            <h3>Essential Jacket Types</h3>
+            <div class="profile-grid">
+                <div class="profile-card">
+                    <h4>🧥 Bomber</h4>
+                    <p>Classic, structured, hip-length</p>
+                </div>
+                <div class="profile-card">
+                    <h4>🎽 Harrington</h4>
+                    <p>Clean lines, collar, hip-length</p>
+                </div>
+                <div class="profile-card">
+                    <h4>👔 Denim Jacket</h4>
+                    <p>Slim fit, dark wash, structured</p>
+                </div>
+                <div class="profile-card">
+                    <h4>🕴️ Short Blazer</h4>
+                    <p>Single-breasted, 2-button, hip-length</p>
+                </div>
+            </div>
+            
+            <div class="golden-rule" style="font-size: 1em;">
+                ⚠️ CRITICAL: All jackets must end at hipbone or 1-2 inches above (never below crotch)
+            </div>
+            
+            <h4>Best Colors:</h4>
+            <div class="color-palette">
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #4a4f36;"></div>
+                    <div class="color-name">Dark Olive</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #c19a6b;"></div>
+                    <div class="color-name">Camel</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #3a3a3a;"></div>
+                    <div class="color-name">Charcoal</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #1e2640;"></div>
+                    <div class="color-name">Deep Navy</div>
+                </div>
+            </div>
+            
+            <div class="avoid-box">
+                <h4>❌ Avoid</h4>
+                <ul>
+                    <li>Longline coats</li>
+                    <li>Puffy jackets</li>
+                    <li>Oversized silhouettes</li>
+                    <li>3-button blazers</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 7: Footwear -->
+        <div class="section">
+            <h2>6. Footwear</h2>
+            
+            <div class="outfit-grid">
+                <div class="outfit-card">
+                    <h4>👟 Casual</h4>
+                    <ul class="outfit-items">
+                        <li>Leather/Suede Sneakers (slim sole)</li>
+                        <li>Colors: Dark Brown, Olive, Navy, Cream</li>
+                        <li>Avoid: Pure white, chunky soles</li>
+                    </ul>
+                </div>
+                
+                <div class="outfit-card">
+                    <h4>👞 Smart / Dates</h4>
+                    <ul class="outfit-items">
+                        <li>Chelsea Boots</li>
+                        <li>Loafers</li>
+                        <li>Brogues</li>
+                        <li>Colors: Brown, Cognac, Oxblood, Burgundy</li>
+                        <li>Toe: Sleek rounded or chisel (NOT square)</li>
+                    </ul>
+                </div>
+                
+                <div class="outfit-card">
+                    <h4>✈️ Travel</h4>
+                    <ul class="outfit-items">
+                        <li>Slim Sneakers</li>
+                        <li>Walking Chelsea Boots</li>
+                        <li>Comfort + Style balance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 8: Accessories -->
+        <div class="section">
+            <h2>7. Accessories & Grooming</h2>
+            
+            <h3>⌚ Watches</h3>
+            <ul>
+                <li><strong>Type:</strong> Analog only with clean dial</li>
+                <li><strong>Size:</strong> 38mm to 40mm case diameter</li>
+                <li><strong>Metal:</strong> Muted Gold or Brushed Warm Metal (Silver secondary)</li>
+                <li><strong>Strap:</strong> Brown leather (daily), Black leather (formal)</li>
+                <li><strong>Dial:</strong> Cream, Black, Navy</li>
+            </ul>
+            
+            <h3>🧢 Hats</h3>
+            <ul>
+                <li><strong>Styles:</strong> Flat cap, Structured baseball cap, Beanie</li>
+                <li><strong>Colors:</strong> Brown, Olive, Charcoal, Navy</li>
+                <li>Avoid: Floppy shapes, bright/neon colors</li>
+            </ul>
+            
+            <h3>✂️ Grooming</h3>
+            <ul>
+                <li><strong>Hair:</strong> Styles with height on top (textured crop, quiff) to elongate. Avoid flat, slicked-back styles.</li>
+                <li><strong>Facial Hair:</strong> Keep neat and structured (trimmed beard or clean-shaven). Avoid overgrown styles.</li>
+            </ul>
+        </div>
+
+        <!-- Section 9: Outfit Formulas -->
+        <div class="section">
+            <h2>8. Foolproof Outfit Formulas</h2>
+            
+            <div class="outfit-grid">
+                <div class="outfit-card">
+                    <h4>☀️ Daily Driver #1</h4>
+                    <ul class="outfit-items">
+                        <li>Olive top</li>
+                        <li>Dark denim</li>
+                        <li>Brown shoes</li>
+                    </ul>
+                </div>
+                
+                <div class="outfit-card">
+                    <h4>☀️ Daily Driver #2</h4>
+                    <ul class="outfit-items">
+                        <li>Rust top</li>
+                        <li>Black jeans</li>
+                        <li>Suede brown shoes</li>
+                    </ul>
+                </div>
+                
+                <div class="outfit-card">
+                    <h4>☀️ Daily Driver #3</h4>
+                    <ul class="outfit-items">
+                        <li>Cream/Ivory top</li>
+                        <li>Olive chinos</li>
+                        <li>Loafers</li>
+                    </ul>
+                </div>
+                
+                <div class="outfit-card">
+                    <h4>🌙 Date Night #1</h4>
+                    <ul class="outfit-items">
+                        <li>Burgundy shirt</li>
+                        <li>Charcoal trousers</li>
+                        <li>Chelsea boots</li>
+                    </ul>
+                </div>
+                
+                <div class="outfit-card">
+                    <h4>🌙 Date Night #2</h4>
+                    <ul class="outfit-items">
+                        <li>Forest green shirt</li>
+                        <li>Dark jeans</li>
+                        <li>Brown boots</li>
+                    </ul>
+                </div>
+                
+                <div class="outfit-card">
+                    <h4>🌙 Date Night #3</h4>
+                    <ul class="outfit-items">
+                        <li>Deep teal shirt</li>
+                        <li>Black jeans</li>
+                        <li>Suede boots</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="golden-rule" style="font-size: 1em; margin-top: 30px;">
+                💡 PRO TIP: Create monochromatic looks (same color family top-to-bottom) for maximum height elongation
+            </div>
+        </div>
+
+        <!-- Section 10: Fabric Guide -->
+        <div class="section">
+            <h2>9. Fabric & Texture Guide</h2>
+            
+            <h3>✅ Preferred Fabrics</h3>
+            <ul>
+                <li>Structured cotton (Oxford, Poplin)</li>
+                <li>Linen blends (not pure linen - too wrinkly)</li>
+                <li>Merino wool</li
